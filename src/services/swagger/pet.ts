@@ -42,7 +42,7 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // 提交至远程master分支：git push -u origin dev
 // 第二次提交，并且远程有分支的话，直接git push
 // 先本地有test分支 使用--set-upstream创建一个同名的分支 然后再add commit push
-// merge fetch pull
+// merge fetch pull 回滚
 
 // services:请求http
 
