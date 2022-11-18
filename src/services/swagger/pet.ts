@@ -40,6 +40,7 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // 远程创建新的分支：git push --set-upstream origin dev
 // 提交至远程master分支：git push -u origin dev
 // 第二次提交，并且远程有分支的话，直接git push
+// 先本地有test分支 使用--set-upstream创建一个同名的分支 然后再add commit push
 
 // services:请求http
 
