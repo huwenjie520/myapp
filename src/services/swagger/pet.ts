@@ -28,7 +28,7 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // git init 会创建一个.git文件夹 是隐藏的文件夹
 // git add .
 // git commmit -m '' . fix简单修改 feat增加功能
-// git checkout 切换分支
+// git checkout 切换分支 当前分支提交完才可以切换分支
 // master main dev分支
 // push之前pull下来，查看冲突，再push 
 // 查看本地分支：git branch
