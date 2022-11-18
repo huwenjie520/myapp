@@ -35,6 +35,7 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // master main dev分支
 // 添加远程仓库地址：git remote add origin git地址
 // 提交至远程master分支：git push -u origin master
+// 远程创建新的分支：git push --set-upstream origin dev
 
 // services:请求http
 
