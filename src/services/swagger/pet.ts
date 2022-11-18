@@ -14,6 +14,32 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
   });
 }
 
+// git安装
+// git配置提交的用户名和邮箱
+// git config --global user.name  "hwj"
+// git config --global user.emal  "768571442@qq.com"
+// git commit
+// 配置git SSH表示是你的账户，不用登录
+// 在git中新建仓库
+
+// git命令
+// git可视化操作
+// git init 会创建一个.git文件夹 是隐藏的文件夹
+// git add .
+// git commmit -m '' . fix简单修改 feat增加功能
+// git checkout 切换分支
+// push之前pull下来，查看冲突，再push 
+// git branch
+// git clone
+// master main dev分支
+
+// services:请求http
+
+// react props
+// git + ts + react hooks(usestate\useeffect\useref\usememo)
+// react class
+// vscode中使用git
+
 /** Add a new pet to the store POST /pet */
 export async function addPet(body: API.Pet, options?: { [key: string]: any }) {
   return request<any>('/pet', {

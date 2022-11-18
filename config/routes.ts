@@ -18,6 +18,11 @@ export default [
         path: '/user/login',
         component: './User/Login',
       },
+      // {
+      //   name: 'login',
+      //   path: '/user/register',
+      //   component: './User/register',
+      // },
     ],
   },
   {
