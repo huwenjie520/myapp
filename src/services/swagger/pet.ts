@@ -28,7 +28,8 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // git init 会创建一个.git文件夹 是隐藏的文件夹
 // git add .
 // git commmit -m '' . fix简单修改 feat增加功能
-// 本地新建分支：git checkout -b 分支名
+// 新建分支：git branch 分支名
+// 本地新建并切换分支：git checkout -b 分支名
 // 切换分支：git checkout 分支名
 // master main dev分支
 // push之前pull下来，查看冲突，再push 
@@ -41,7 +42,7 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // 提交至远程master分支：git push -u origin dev
 // 第二次提交，并且远程有分支的话，直接git push
 // 先本地有test分支 使用--set-upstream创建一个同名的分支 然后再add commit push
-// ‘测试提交到不同的分支’
+// ‘’
 
 // services:请求http
 
