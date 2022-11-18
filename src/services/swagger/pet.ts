@@ -29,13 +29,16 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // git add .
 // git commmit -m '' . fix简单修改 feat增加功能
 // git checkout 切换分支
-// push之前pull下来，查看冲突，再push 
-// git branch
-// git clone
 // master main dev分支
+// push之前pull下来，查看冲突，再push 
+// 查看本地分支：git branch
+// 查看所有分支（包括远程）：git branch -a
+// git clone git地址
+// 第一次提交：
 // 添加远程仓库地址：git remote add origin git地址
-// 提交至远程master分支：git push -u origin master
 // 远程创建新的分支：git push --set-upstream origin dev
+// 提交至远程master分支：git push -u origin dev
+// 第二次提交，并且远程有分支的话，直接git push
 
 // services:请求http
 
