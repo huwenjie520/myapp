@@ -22,6 +22,7 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // 配置git SSH表示是你的账户，不用登录
 // 在git中新建仓库
 
+
 // git命令
 // git可视化操作
 // git init 会创建一个.git文件夹 是隐藏的文件夹
@@ -32,6 +33,8 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // git branch
 // git clone
 // master main dev分支
+// 添加远程仓库地址：git remote add origin git地址
+// 提交至远程master分支：git push -u origin master
 
 // services:请求http
 
