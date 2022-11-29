@@ -11,18 +11,13 @@
 export default [
   {
     path: '/user',
-    layout: false,
+    layout: false, //默认开启，若无需国际化则设置为false
     routes: [
       {
         name: 'login',
         path: '/user/login',
         component: './User/Login',
       },
-      // {
-      //   name: 'login',
-      //   path: '/user/register',
-      //   component: './User/register',
-      // },
     ],
   },
   {
@@ -53,6 +48,18 @@ export default [
     icon: 'table',
     path: '/list',
     component: './TableList',
+  },
+  {
+    name: 'list',
+    icon: 'table',
+    path: '/listtest',
+    component: './TableTest',
+  },
+  {
+    name: '发布日历',
+    icon: 'ContactsOutlined',
+    path: '/publish',
+    component: './Publish',
   },
   {
     path: '/',

@@ -51,6 +51,7 @@ export async function rule(
   },
   options?: { [key: string]: any },
 ) {
+  // alert("params:",params)
   return request<API.RuleList>('/api/rule', {
     method: 'GET',
     params: {
@@ -78,6 +79,7 @@ export async function addRule(options?: { [key: string]: any }) {
 
 /** 删除规则 DELETE /api/rule */
 export async function removeRule(options?: { [key: string]: any }) {
+  // alert("options:",options)
   return request<Record<string, any>>('/api/rule', {
     method: 'DELETE',
     ...(options || {}),

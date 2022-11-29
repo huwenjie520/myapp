@@ -1,4 +1,5 @@
 export default {
+  'menu.发布日历': '发布日历',
   'menu.welcome': '欢迎',
   'menu.more-blocks': '更多区块',
   'menu.home': '首页',
