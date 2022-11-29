@@ -5,4 +5,6 @@
 public
 dist
 .umi
+src
+node_nodules
 mock

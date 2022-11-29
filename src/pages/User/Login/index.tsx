@@ -36,15 +36,18 @@ const LoginMessage: React.FC<{
   );
 };
 
+//函数式组件
 const Login: React.FC = () => {
   const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
   const [type, setType] = useState<string>('account');
   const { initialState, setInitialState } = useModel('@@initialState');
 
+  //国际化
   const intl = useIntl();
 
   const fetchUserInfo = async () => {
     const userInfo = await initialState?.fetchUserInfo?.();
+    // console.log("userinfo:",userInfo)
     if (userInfo) {
       flushSync(() => {
         setInitialState((s) => ({
@@ -57,16 +60,23 @@ const Login: React.FC = () => {
 
   const handleSubmit = async (values: API.LoginParams) => {
     try {
+      //values:username: 'admin', password: 'ant.design'
+      // type:account
+      // console.log("values:",values)
+      // console.log("type:",type)
       // 登录
       const msg = await login({ ...values, type });
       if (msg.status === 'ok') {
+        //国际化
         const defaultLoginSuccessMessage = intl.formatMessage({
           id: 'pages.login.success',
           defaultMessage: '登录成功！',
         });
         message.success(defaultLoginSuccessMessage);
         await fetchUserInfo();
+        // http://localhost:8000/user/login?redirect=%2Flist
         const urlParams = new URL(window.location.href).searchParams;
+        //重定向为list
         history.push(urlParams.get('redirect') || '/');
         return;
       }
@@ -146,7 +156,9 @@ const Login: React.FC = () => {
               <ProFormText
                 name="username"
                 fieldProps={{
+                  //表单的大小
                   size: 'large',
+                  //表单图标
                   prefix: <UserOutlined className={styles.prefixIcon} />,
                 }}
                 placeholder={intl.formatMessage({

@@ -22,17 +22,17 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // 配置git SSH表示是你的账户，不用登录
 // 在git中新建仓库
 
-
 // git命令
 // git可视化操作
 // git init 会创建一个.git文件夹 是隐藏的文件夹
 // git add .
 // git commmit -m '' . fix简单修改 feat增加功能
+// git checkout 切换分支 当前分支提交完才可以切换分支
 // 新建分支：git branch 分支名
 // 本地新建并切换分支：git checkout -b 分支名
 // 切换分支：git checkout 分支名
 // master main dev分支
-// push之前pull下来，查看冲突，再push 
+// push之前pull下来，查看冲突，再push
 // 查看本地分支：git branch
 // 查看所有分支（包括远程）：git branch -a
 // git clone git地址
@@ -42,8 +42,11 @@ export async function updatePet(body: API.Pet, options?: { [key: string]: any })
 // 提交至远程master分支：git push -u origin dev
 // 第二次提交，并且远程有分支的话，直接git push
 // 先本地有test分支 使用--set-upstream创建一个同名的分支 然后再add commit push
-// merge fetch pull 回滚
-// '测试merge'
+
+// 安装
+// npm install
+// 运行
+// npm start
 
 // services:请求http
 
